@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    @apply bg-gray-900 text-gray-100;
+    font-family: 'Inter', sans-serif;
+  }
+}
+
+@layer components {
+  .container-custom {
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full;
+  }
+  
+  .section-title {
+    @apply text-3xl md:text-4xl font-bold mb-12 text-center w-full;
+  }
+  
+  .gradient-text {
+    @apply bg-gradient-to-r from-purple-400 to-blue-500 bg-clip-text text-transparent;
+  }
+  
+  .card {
+    @apply bg-gray-800/50 backdrop-blur-sm border border-gray-700 rounded-2xl p-6 hover:border-purple-500/50 transition-all duration-300;
+  }
+}
